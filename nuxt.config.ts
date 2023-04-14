@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/color-mode'],
     colorMode: {
       preference: 'dark', // default value of $colorMode.preference
+    },
+    experimental: {
+      payloadExtraction: false
+    },
+    app: {
+      baseURL: '/body-parts/' // baseURL: '/<repository>/'
     }
 
 })
