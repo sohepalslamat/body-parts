@@ -14,5 +14,10 @@ export default defineNuxtConfig({
       baseURL: '/body-parts/', // baseURL: '/<repository>/'
       // buildAssetsDir: '/dist/_nuxt'
     },
+    runtimeConfig:{
+      app:{
+        baseURL: '/body-parts/',
+      }
+    }
 
 })
