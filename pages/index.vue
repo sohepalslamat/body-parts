@@ -1,6 +1,9 @@
 <template>
     <div>
       <Title>أقسام جسم الإنسان</Title>
-      <BodyMainBody/>
+      <ClientOnly>
+        <BookPage/>
+        <BodyMainBody/>
+      </ClientOnly>
     </div>
   </template>
