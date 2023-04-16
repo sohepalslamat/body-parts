@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     components: { global: true, dirs: ['~/components'] },
     modules: ['@nuxtjs/color-mode'],
     colorMode: {
-      preference: 'dark', // default value of $colorMode.preference
+      preference: 'sepia', // default value of $colorMode.preference
     },
     experimental: {
       payloadExtraction: false
