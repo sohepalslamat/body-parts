@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       payloadExtraction: false
     },
     app: {
-      baseURL: '/body-parts/', // baseURL: '/<repository>/'
+      // baseURL: '/body-parts/', // baseURL: '/<repository>/'
       // buildAssetsDir: '/dist/_nuxt'
     },
 
