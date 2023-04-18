@@ -19,10 +19,11 @@
   padding-top: 2px;
   border-bottom: 1px solid var(--border-color);
   .logo {
-    float: left;
+    float:right;
+    margin-top: 2px;
   }
   .color-mode {
-    float: right;
+    float: left;
   }
 
 }

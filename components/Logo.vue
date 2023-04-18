@@ -1,5 +1,5 @@
 <template>
-  <h1>Demo</h1>
+  <h2>أقسام جسم الإنسان</h2>
 </template>
 
 <style scoped>
