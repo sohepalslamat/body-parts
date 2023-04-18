@@ -266,7 +266,7 @@
                 </g>
             </g>
         </g>
-        <g style="" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
+        <g style="" ref="p1" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
             <title>p1</title>
             <g fill="#000000" fill-opacity="1" transform="matrix(1.296966, 0, 0, 1.230912, 1.152003, 0.000002)">
                 <g transform="translate(188.224902, 190.232678)">
@@ -1085,7 +1085,7 @@
                 </g>
             </g>
         </g>
-        <g style="" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
+        <g style="" ref="p2" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
             <title>p2</title>
             <g fill="#000000" fill-opacity="1" transform="matrix(1.296966, 0, 0, 1.230912, 1.152003, 0.000002)">
                 <g transform="translate(194.185824, 263.797143)">
@@ -1776,7 +1776,7 @@
                 </g>
             </g>
         </g>
-        <g style="" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
+        <g style="" ref="p3" transform="matrix(1.141865, 0, 0, 1.168799, 1.33037, -1.66082)">
             <title>p3</title>
             <g fill="#000000" fill-opacity="1" transform="matrix(1.296966, 0, 0, 1.230912, 1.152003, 0.000002)">
                 <g transform="translate(382.649323, 315.313264)">
@@ -2327,3 +2327,28 @@
     </g>
 </svg>
 </template>
+
+<script setup>
+const p1 = ref()
+const p2 = ref()
+const p3 = ref()
+
+onMounted(() => {
+    for(const child of p1.value.children){
+        if(child.getAttribute('fill') == '#5271ff'){
+            child.setAttribute('fill','var(--color-primary)')
+        } else child.setAttribute('fill','var(--color)')
+    }
+    for(const child of p2.value.children){
+        if(child.getAttribute('fill') == '#5271ff'){
+            child.setAttribute('fill','var(--color-primary)')
+        } else child.setAttribute('fill','var(--color)')
+    }
+    for(const child of p3.value.children){
+        if(child.getAttribute('fill') == '#5271ff'){
+            child.setAttribute('fill','var(--color-primary)')
+        } else child.setAttribute('fill','var(--color)')
+    }
+	
+})
+</script>
